@@ -137,6 +137,8 @@ let g:prettier#config#prose_wrap = 'preserve'
 autocmd FileType javascript,typescript,json,markdown,css,less,sass,scss,html,yaml map <leader>p <Plug>(Prettier)
 autocmd FileType rust map <leader>p :RustFmt<CR>
 autocmd FileType go map <leader>p :GoFmt<CR>
+autocmd FileType typescript JsPreTmpl
+autocmd FileType typescript syn clear foldBraces
 
 :vnoremap <C-c> "+y
 :vnoremap <C-x> "+d
