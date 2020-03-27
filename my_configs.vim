@@ -46,7 +46,7 @@ autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai
 autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
 autocmd FileType html,wxml set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
 autocmd FileType css,styl,wxss set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
-autocmd FileType javascript,typescript set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
+autocmd FileType javascript,typescript,javascript.jsx,typescript.tsx set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
 
 " 关闭方向键, 强迫自己用 hjkl
 map <Left> <Nop>
