@@ -60,17 +60,6 @@ nnoremap <F4> :set wrap! wrap?<CR>
 " 取消markdown 代码折叠
 let g:vim_markdown_folding_disabled = 1
 
-" 代码自动补全
-let g:ycm_key_list_select_completion = ['<Down>']
-let g:ycm_key_list_previous_completion = ['<Up>']
-let g:ycm_complete_in_comments = 1  "在注释输入中也能补全
-let g:ycm_complete_in_strings = 1   "在字符串输入中也能补全
-
-" 跳转到定义处, 分屏打开
-let g:ycm_goto_buffer_command = 'horizontal-split'
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
-
 " 让复制粘贴格式不会错乱
 function! WrapForTmux(s)
   if !exists('$TMUX')
